@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sabor & Brasa | Restaurante</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Sabor & Brasa</a>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="inicio">
+
+            <div>
+                <span>O sabor que você merece</span>
+
+                <h1>Hambúrguer artesanal feito de verdade</h1>
+
+                <p>
+                    Ingredientes selecionados, carne suculenta
+                    e muito sabor em cada mordida.
+                </p>
+
+                <a href="#cardapio">Ver cardápio</a>
+            </div>
+
+        </section>
+
+
+        <section id="cardapio">
+
+            <h2>Nosso cardápio</h2>
+
+            <p>Escolha uma categoria:</p>
+
+            <div>
+                <button type="button" class="filter-btn" data-category="todos">Todos</button>
+
+                <button type="button" class="filter-btn" data-category="hamburguer">
+                    Hambúrgueres
+                </button>
+
+                <button type="button" class="filter-btn" data-category="pizza">
+                    Pizzas
+                </button>
+
+                <button type="button" class="filter-btn" data-category="bebida">
+                    Bebidas
+                </button>
+            </div>
+
+
+            <div id="produtos">
+
+                <article data-category="hamburguer"
+                        data-name="X-Bacon"
+                        data-price="29.90">
+
+                    <h3>X-Bacon</h3>
+
+                    <p>
+                        Pão brioche, hambúrguer artesanal,
+                        queijo, bacon e molho especial.
+                    </p>
+
+                    <strong>R$ 29,90</strong>
+
+                    <button type="button" class="add-cart">
+                        Adicionar ao pedido
+                    </button>
+
+                </article>
+
+
+                <article data-category="hamburguer"
+                        data-name="X-Salada"
+                        data-price="25.90">
+
+                    <h3>X-Salada</h3>
+
+                    <p>
+                        Pão brioche, hambúrguer artesanal,
+                        queijo, alface, tomate e molho especial.
+                    </p>
+
+                    <strong>R$ 25,90</strong>
+
+                    <button type="button" class="add-cart">
+                        Adicionar ao pedido
+                    </button>
+
+                </article>
+
+
+                <article data-category="pizza"
+                        data-name="Pizza Calabresa"
+                        data-price="39.90">
+
+                    <h3>Pizza Calabresa</h3>
+
+                    <p>
+                        Molho de tomate, queijo, calabresa
+                        e cebola.
+                    </p>
+
+                    <strong>R$ 39,90</strong>
+
+                    <button type="button" class="add-cart">
+                        Adicionar ao pedido
+                    </button>
+
+                </article>
+
+
+                <article data-category="bebida"
+                        data-name="Refrigerante"
+                        data-price="6.00">
+
+                    <h3>Refrigerante</h3>
+
+                    <p>
+                        Refrigerante lata 350ml.
+                    </p>
+
+                    <strong>R$ 6,00</strong>
+
+                    <button type="button" class="add-cart">
+                        Adicionar ao pedido
+                    </button>
+
+                </article>
+
+            </div>
+            <aside id="carrinho">
+
+                <h2>Seu pedido</h2>
+
+                <div id="itens-carrinho">
+                    <p>Nenhum item adicionado.</p>
+                </div>
+
+                <p>
+                    Total: R$ <span id="total-carrinho">0,00</span>
+                </p>
+
+                <button id="finalizar-pedido">
+                    Finalizar pedido
+                </button>
+
+            </aside>
+
+        </section>
+
+
+        <section id="sobre">
+
+            <h2>Sobre nós</h2>
+
+            <p>
+                O Sabor & Brasa nasceu com o objetivo de oferecer
+                comida artesanal, preparada com ingredientes de qualidade
+                e muito cuidado.
+            </p>
+
+        </section>
+
+
+        <section id="contato">
+
+            <h2>Entre em contato</h2>
+
+            <p>📍 Florianópolis - SC</p>
+
+            <p>📱 (48) 99999-9999</p>
+
+            <p>🕐 Terça a domingo, das 18h às 23h</p>
+
+            <a href="#">Pedir pelo WhatsApp</a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Sabor & Brasa. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
