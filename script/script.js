@@ -201,7 +201,7 @@ finishButton.addEventListener("click", () => {
 
     message += `*Total: R$ ${total.toFixed(2).replace(".", ",")}*`;
 
-    const phone = "5571992921723";
+    const phone = "554800000-0000";
 
     const whatsappURL =
         `https://wa.me/${phone}?text=${message}`;
